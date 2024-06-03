@@ -1,0 +1,305 @@
+/* Osnovni stil */
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    background-color: #e7f1fb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* Naslovi */
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #0079B9;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    color: #0DA2F2;
+    font-size: 2em;
+}
+
+/* Besedilo */
+
+p {
+    font-size: 1.15em;
+    color: #1c2127;
+}
+
+/* Navigacijska vrstica */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: linear-gradient(to right, #bed4e9, #1354a4);
+    color:#black;
+    border: 0; 
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-toggle {
+    background-color: black;
+    margin-top: 30px;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    border-color:black;
+    background-color:  black;;
+}
+
+.navbar-brand {
+    float: left;
+    min-height: 85px;
+    padding: 10px 0 0 25px;
+}
+
+.navbar-brand img {
+    height: 80px;
+    margin-bottom: 5px
+}
+
+.navbar-inverse .navbar-nav {
+    margin-top: 40px;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    margin-bottom: 0;
+    border-radius: 0;
+    color:black;
+    border: 0; 
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #999;
+    padding: 3px 8px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    color:#black;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav {
+        margin-top: 5px;
+        padding-left: 25px;
+    }
+}
+
+/* Noga */
+
+footer {
+    background-color: #111;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: color #0b385f;
+    opacity: 0.9;
+}
+
+/* Hover efekt na ikonah družabnih omrežij */
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background: linear-gradient(to right, #1a8cc7, #0b385f); 
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+/* postavitev slik*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-content {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 600px;
+}
+  .thumbnail img {
+      height: 300px; 
+      width: 100%;
+      object-fit: cover;
+    }
+
+/* Položaj in oblika napisa na slikah vrtiljaka */
+
+.carousel-caption {
+    top: 70%;
+    transform: translateY(-70%);
+}
+
+.carousel-caption p {
+    font-size: 1.5em;
+    color: #bbb;
+}
+
+/* Gumb na sliki vrtiljaka */
+
+.carousel-caption button {
+    margin-top: 1.5em;
+}
+
+.carousel-caption .btn {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #1354a4;
+    padding: 12px 22px;
+    border: 2px solid #fff;
+}
+
+.carousel-caption .btn:hover {
+    color: #553d7b;
+    background-color: #fff;
+}
+
+/* Oblika glave strani */
+
+.bs-glavaStrani {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.bs-glavaStrani h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.bs-glavaStrani p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Tabela cenikov */
+
+.pricing-table {
+    margin-top: 50px;
+}
+
+.pricing-table th,
+.pricing-table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pricing-table th {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.pricing-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
